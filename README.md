@@ -1,7 +1,8 @@
 # tikz-graphs
 A collection of generic graphs drawn in TiKz.
 
-## Why? While one can find many collections of examples of graphs and other
+## Why?
+While one can find many collections of examples of graphs and other
 drawings in TiKz on the internet, most of them are highly specialised, and are
 often needlessly complex, to show what one can accomplish with TiKz.
 
