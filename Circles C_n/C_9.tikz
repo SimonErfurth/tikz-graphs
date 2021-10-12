@@ -1,0 +1,19 @@
+% Uses the following styles:
+% \tikzstyle{vertex}=[fill={rgb,255: red,223; green,223; blue,223}, draw=black,
+% shape=circle, minimum size=10pt]
+% \tikzstyle{edge}=[thick, -]
+
+% Name startes at bottom vertex, goes clockwise around.
+
+\begin{tikzpicture}
+	\node [style=vertex] (v1) at (0, -3) {};
+    \node [style=vertex] (v2) at (-1.93, -2.3) {};
+	\node [style=vertex] (v3) at (-2.95, -0.52) {};
+    \node [style=vertex] (v4) at (-2.6, 1.5) {};
+    \node [style=vertex] (v5) at (-1.03, 2.82) {};
+    \node [style=vertex] (v6) at (1.03, 2.82) {};
+    \node [style=vertex] (v7) at (2.6, 1.5) {};
+	\node [style=vertex] (v8) at (2.95, -0.52) {};
+    \node [style=vertex] (v9) at (1.93, -2.3) {};
+    \draw [style=edge] (v1) -- (v2) -- (v3) -- (v4) -- (v5) -- (v6) -- (v7) -- (v8) -- (v9) -- (v1);
+\end{tikzpicture}
