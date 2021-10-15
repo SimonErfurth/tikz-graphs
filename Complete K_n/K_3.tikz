@@ -9,5 +9,7 @@
 	\node [style=vertex] (v1) at (0, -3) {$v_1$};
 	\node [style=vertex] (v2) at (-2.6, 1.5) {$v_2$};
 	\node [style=vertex] (v3) at (2.6, 1.5) {$v_3$};
-    \draw [style=edge] (v1) -- (v2) -- (v3) -- (v1);
+    \draw [style=edge] (v1) -- (v2);
+    \draw [style=edge] (v1) -- (v3);
+    \draw [style=edge] (v2) -- (v3);
 \end{tikzpicture}
