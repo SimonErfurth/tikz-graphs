@@ -1,0 +1,30 @@
+% Uses the following styles:
+% \tikzstyle{vertex}=[fill={rgb,255: red,223; green,223; blue,223}, draw=black,
+% shape=circle, minimum size=10pt]
+% \tikzstyle{edge}=[thick, -]
+
+% Name startes at bottom vertex, goes clockwise around.
+
+\begin{tikzpicture}
+    \node [style=vertex] (v1) at (1.5, -2.6) {$v_1$};
+	\node [style=vertex] (v2) at (-1.5, -2.6) {$v_2$};
+	\node [style=vertex] (v3) at (-3, 0) {$v_3$};
+	\node [style=vertex] (v4) at (-1.5, 2.6) {$v_4$};
+	\node [style=vertex] (v5) at (1.5, 2.6) {$v_5$};
+	\node [style=vertex] (v6) at (3, 0) {$v_6$};
+    \draw [style=edge] (v1) -- (v2);
+    \draw [style=edge] (v1) -- (v3);
+    \draw [style=edge] (v1) -- (v4);
+    \draw [style=edge] (v1) -- (v5);
+    \draw [style=edge] (v1) -- (v6);
+    \draw [style=edge] (v2) -- (v3);
+    \draw [style=edge] (v2) -- (v4);
+    \draw [style=edge] (v2) -- (v5);
+    \draw [style=edge] (v2) -- (v6);
+    \draw [style=edge] (v3) -- (v4);
+    \draw [style=edge] (v3) -- (v5);
+    \draw [style=edge] (v3) -- (v6);
+    \draw [style=edge] (v4) -- (v5);
+    \draw [style=edge] (v4) -- (v6);
+    \draw [style=edge] (v5) -- (v6);
+\end{tikzpicture}
